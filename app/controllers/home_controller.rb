@@ -6,4 +6,10 @@ class HomeController < ApplicationController
   def create
 
   end
+
+  def show
+
+  end
+
+
 end

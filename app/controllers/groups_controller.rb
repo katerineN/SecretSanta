@@ -10,4 +10,8 @@ class GroupsController < ApplicationController
   def index
 
   end
+
+  def group_params
+    params.require(:groups).permit(:name,:date,:password)
+  end
 end
