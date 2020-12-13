@@ -1,0 +1,28 @@
+<%= form_for :group, url: groups_path do |f| %>
+<p>
+  Название команды:
+  <%= f.text_field :name %>
+</p>
+  <p>
+    Дата распределения:
+    <%= f.date_select :name %>
+  </p>
+  <p>
+
+  </p>
+  <p>
+    Имя и фамилия:
+    <%= f.text_field :name_user %>
+  </p>
+  <p>
+    Адрес электронной почты:
+    <%= f.email_field :email %>
+  </p>
+  <p>
+    Пожелания для тайного санты:
+    <%= f.text_area :name %>
+  </p>
+<% end %>
+<%= link_to controller: 'home' do %>
+  <button class="button">Отправить</button>
+<% end %>
