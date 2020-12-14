@@ -1,4 +1,4 @@
 
-<%= form_for :home, :url => {:controller => 'groups'} do |f| %>
-  <%= f.submit('Создать команду по спасению Нового Года') %>
+<%= link_to :controller => :groups do %>
+  <button class="button">Создать команду по спасению Нового Года</button>
 <% end %>
