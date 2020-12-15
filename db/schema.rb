@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_14_172452) do
+ActiveRecord::Schema.define(version: 2020_12_15_095847) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,16 +24,16 @@ ActiveRecord::Schema.define(version: 2020_12_14_172452) do
   end
 
   create_table "santas", force: :cascade do |t|
-    t.integer "id_group"
-    t.integer "id_sender"
-    t.integer "id_receiver"
+    t.integer "group_id"
+    t.integer "sender_id"
+    t.integer "receiver_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name_user", null: false
     t.string "email", null: false
     t.text "wish"
-    t.integer "id_group"
+    t.integer "group_id"
   end
 
 end

@@ -6,10 +6,11 @@ class GroupsController < ApplicationController
   def create
 
     @group = Group.new(group_params)
-    @user = User.new(user_params)
-    @user.id_group = @group
-
     @group.save
+    @user = User.new(user_params)
+    @user.group = @group
+
+
     @user.save
 
     redirect_to '/'
