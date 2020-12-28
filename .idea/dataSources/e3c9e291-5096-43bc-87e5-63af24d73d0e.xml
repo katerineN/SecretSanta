@@ -684,7 +684,7 @@ true Pacific/Easter
 false Pacific/Efate
 false Pacific/Enderbury
 false Pacific/Fakaofo
-false Pacific/Fiji
+true Pacific/Fiji
 false Pacific/Funafuti
 false Pacific/Galapagos
 false Pacific/Gambier
@@ -784,12 +784,12 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1607962090</StartupTime>
+      <StartupTime>1608540382</StartupTime>
     </root>
     <database id="2" parent="1" name="SecretSanta_development">
       <ObjectId>16394</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>609</IntrospectionStateNumber>
+      <IntrospectionStateNumber>620</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|16423|16425|1
 sequence|table|16456|16458|1
@@ -854,7 +854,7 @@ sequence|table|16467|16469|1
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>610</IntrospectionStateNumber>
+      <IntrospectionStateNumber>621</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="17" parent="2" name="heap">
@@ -950,7 +950,7 @@ sequence|table|16467|16469|1
     <table id="33" parent="16" name="groups">
       <ObjectId>16425</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>528</StateNumber>
+      <StateNumber>619</StateNumber>
     </table>
     <table id="34" parent="16" name="santas">
       <ObjectId>16469</ObjectId>
@@ -1025,9 +1025,9 @@ sequence|table|16467|16469|1
     </column>
     <column id="45" parent="33" name="password">
       <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <StateNumber>528</StateNumber>
-      <TypeId>23</TypeId>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>619</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
     <column id="46" parent="33" name="date">
       <Position>4</Position>
@@ -1051,7 +1051,7 @@ sequence|table|16467|16469|1
     </column>
     <index id="49" parent="33" name="groups_pkey">
       <ObjectId>16432</ObjectId>
-      <StateNumber>528</StateNumber>
+      <StateNumber>619</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1071,22 +1071,22 @@ sequence|table|16467|16469|1
       <DefaultExpression>nextval(&apos;santas_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="52" parent="34" name="id_group">
+    <column id="52" parent="34" name="group_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>574</StateNumber>
+      <StateNumber>613</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="53" parent="34" name="id_sender">
+    <column id="53" parent="34" name="sender_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>574</StateNumber>
+      <StateNumber>613</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="54" parent="34" name="id_receiver">
+    <column id="54" parent="34" name="receiver_id">
       <Position>4</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>574</StateNumber>
+      <StateNumber>613</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="55" parent="34" name="santas_pkey">
@@ -1152,10 +1152,10 @@ sequence|table|16467|16469|1
       <StateNumber>571</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="64" parent="36" name="id_group">
+    <column id="64" parent="36" name="group_id">
       <Position>5</Position>
       <DataType>integer|0s</DataType>
-      <StateNumber>571</StateNumber>
+      <StateNumber>611</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <index id="65" parent="36" name="users_pkey">

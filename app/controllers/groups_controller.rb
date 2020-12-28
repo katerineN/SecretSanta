@@ -21,10 +21,18 @@ class GroupsController < ApplicationController
   end
 
   private def group_params
+
     params.permit(:name, :password, :date)
   end
 
   private def user_params
     params.permit(:name_user, :email, :wish)
+  end
+
+  private def hashPassword(p)
+    x = p % 100
+    y = (p / 100) % 100
+    z = p / 10000
+    s = z.chr + y.chr + x.chr
   end
 end

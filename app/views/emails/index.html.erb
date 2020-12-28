@@ -1,0 +1,10 @@
+<%= form_with model: @email do |f| %>
+  <p>
+    Пароль:
+    <%f.label :password %>
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit "Отправить"%>
+  </p>
+<%end %>
